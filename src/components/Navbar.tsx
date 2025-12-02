@@ -1,22 +1,22 @@
-import { Button, Container, Nav, Navbar as Navbars, NavLink} from "react-bootstrap";
+import { Button, Container, Nav, Navbar as Navbars } from "react-bootstrap";
+import { NavLink } from "react-router-dom";
 import { useShoppingCart } from "../context/ShoppingCartContext";
+import "./Navbar.css"; // Import custom CSS for Navbar
 
 export function Navbar() {
     const { openCart, cartQuantity } = useShoppingCart()
     return (
      <Navbars sticky="top" className="bg-white shadow-sm mb-3">
         <Container>
-            <Nav className="me-auto">
-                <Nav.Link to="/" as={NavLink}>
-                Home
+            <Nav className="me-auto" >
+                <Nav.Link as={NavLink} to="/" className="nav-link-custom">
+                    Home
                 </Nav.Link>
-
-                <Nav.Link to="/store" as={NavLink}>
-                Store
+                <Nav.Link as={NavLink} to="/store" className="nav-link-custom">
+                    Store
                 </Nav.Link>
-            
-                <Nav.Link to="/about" as={NavLink}>
-                About
+                <Nav.Link as={NavLink} to="/about" className="nav-link-custom">
+                    About
                 </Nav.Link>
             </Nav>
                 {cartQuantity > 0 && (<Button onClick={openCart} style={{ width: "3rem", height: "3rem", position: "relative" }} variant="outline-primary" className="rounded-circle">
