@@ -1,26 +1,44 @@
 [
   {
     "id": 1,
-    "name": "Book",
+    "name": "Fiction Book",
     "price": 999,
     "imgUrl": "/imgs/pic1.png"
   },
   {
     "id": 2,
-    "name": "Computer",
+    "name": "Chess Board",
     "price": 899,
     "imgUrl": "/imgs/pic2.png"
   },
   {
     "id": 3,
-    "name": "car",
+    "name": "Labubu",
     "price": 349,
     "imgUrl": "/imgs/pic3.png"
   },
   {
     "id": 4,
-    "name": "Banana",
+    "name": "Teddy Bear",
     "price": 1299,
     "imgUrl": "/imgs/pic4.png"
+  },
+  {
+    "id": 5,
+    "name": "Lego",
+    "price": 499,
+    "imgUrl": "/imgs/pic5.png"
+  },
+  {
+    "id": 6,
+    "name": "Robot Toy",
+    "price": 599,
+    "imgUrl": "/imgs/pic6.png"
+  },
+  {
+    "id": 7,
+    "name": "Car",
+    "price": 299,
+    "imgUrl": "/imgs/pic7.png"
   }
 ]
