@@ -1,0 +1,27 @@
+
+.nav-link-custom {
+  color: #333 !important;
+  padding: 8px 16px;
+  background-color: transparent; 
+   transition: 0.2s;
+   border-radius: 10px;
+}
+
+
+.nav-link-custom:hover {
+  background-color: rgba(0, 123, 255, 0.12); /* light blue blur background */
+  color: #007bff !important;
+}
+
+
+.nav-link-custom.nav-link.active {
+  background-color: transparent !important;
+   color: #333 !important; 
+  font-weight: normal;
+}
+
+.nav-link-custom.active:hover,
+.nav-link-custom.nav-link.active:hover {
+  background-color: rgba(0, 123, 255, 0.12) !important;
+  color: #007bff !important;
+}
