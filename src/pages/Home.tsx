@@ -16,7 +16,7 @@ export function Home() {
               <Button href="/store" size="lg" className="btn-primary-store">
                 Shop Now
               </Button>
-              <Button href="/about" size="lg" variant="outline-light">
+              <Button href="/about" size="lg" className="btn-learn">
                 Learn More
               </Button>
             </div>

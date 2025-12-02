@@ -1,6 +1,7 @@
 .hero-store {
   padding: 80px 20px;
-  background: linear-gradient(135deg, #d7f3dc, #eef2f7);
+  /* background: linear-gradient(135deg, #d7f3dc, #eef2f7); */
+  
 }
 
 .store-title {
@@ -21,6 +22,7 @@
   background-color: #007bff;
   border-radius: 8px;
   margin-right: 12px;
+  color: black;
 }
 
 .hero-image-wrap {
