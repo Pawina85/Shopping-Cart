@@ -1,0 +1,41 @@
+.hero-store {
+  padding: 80px 20px;
+  background: linear-gradient(135deg, #d7f3dc, #eef2f7);
+}
+
+.store-title {
+  font-size: 2.8rem;
+  font-weight: 700;
+  margin-bottom: 20px;
+}
+
+.store-subtext {
+  font-size: 1.2rem;
+  color: #6c757d;
+  margin-bottom: 30px;
+}
+
+.hero-buttons .btn-primary-store {
+  padding: 12px 32px;
+  font-size: 1.1rem;
+  background-color: #007bff;
+  border-radius: 8px;
+  margin-right: 12px;
+}
+
+.hero-image-wrap {
+  text-align: center;
+}
+
+.hero-image {
+  width: 100%;
+  max-width: 480px;
+  animation: float 3s ease-in-out infinite;
+}
+
+/* Floating animation */
+@keyframes float {
+  0% { transform: translateY(0); }
+  50% { transform: translateY(-10px); }
+  100% { transform: translateY(0); }
+}
