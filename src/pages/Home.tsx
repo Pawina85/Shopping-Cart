@@ -1,44 +1,43 @@
-import { Button, Col, Container, Row } from "react-bootstrap";
+import Section from "../components/layout/Section";
 import "./Home.css";
 
 export function Home() {
   return (
-    <section className="hero-store">
-      <Container>
-        <Row className="align-items-center hero-row">
-          {/* LEFT: text */}
-          <Col md={6}>
-            <h1 className="store-title">
-              Your Favorite Products, <br />
-              Delivered Fast.
-            </h1>
+    <Section className="hero-cream">
+      <div className="hero-layout">
 
-            <p className="store-subtext">
-              Shop electronics, fashion, home goods, and more — all in one
-              place. Simple shopping, secure checkout, and fast delivery.
-            </p>
+        {/* LEFT SIDE — TEXT */}
+        <div className="hero-text">
+          <h1 className="hero-title">
+            Your Favorite Products, Delivered Fast.
+          </h1>
 
-            <div className="hero-buttons">
-              <Button href="/store" size="lg" className="btn-primary-store">
-                Shop Now
-              </Button>
+          <p className="hero-subtext">
+            Shop electronics, fashion, home goods, and more — all in one place.
+            Simple shopping, secure checkout, and fast delivery.
+          </p>
 
-              <Button href="/about" size="lg" className="btn-learn">
-                Learn More
-              </Button>
-            </div>
-          </Col>
+          <div className="hero-buttons">
+            <a href="/store" className="btn-shop">Shop Now</a>
+            <a href="/about" className="btn-learn">Learn More</a>
+          </div>
+        </div>
 
-          
-          <Col md={6} className="hero-image-wrap">
-            <img
-              src="/imgs/heropic.jpg"
-              alt="Happy people shopping online"
-              className="hero-image"
-            />
-          </Col>
-        </Row>
-      </Container>
-    </section>
+        {/* RIGHT SIDE — COLLAGE */}
+        <div className="hero-collage">
+          <div className="hero-card card-1">
+            <img src="/imgs/home1.png" alt="Hero 1" />
+          </div>
+
+          <div className="hero-card card-2">
+            <img src="/imgs/home2.png" alt="Hero 2" />
+          </div>
+
+          <div className="hero-card card-3">
+            <img src="/imgs/home3.png" alt="Hero 3" />
+          </div>
+        </div>
+      </div>
+    </Section>
   );
 }
