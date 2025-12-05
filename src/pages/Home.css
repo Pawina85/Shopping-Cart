@@ -1,43 +1,136 @@
-.hero-store {
-  padding: 80px 20px;
-  /* background: linear-gradient(135deg, #d7f3dc, #eef2f7); */
+/* Cream background hero */
+.hero-cream {
   
+  padding: 140px 20px;
 }
 
-.store-title {
-  font-size: 2.8rem;
-  font-weight: 700;
-  margin-bottom: 20px;
+/* Layout row */
+.hero-layout {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 60px;
 }
 
-.store-subtext {
-  font-size: 1.2rem;
-  color: #6c757d;
-  margin-bottom: 30px;
-}
-
-.hero-buttons .btn-primary-store {
-  padding: 12px 32px;
-  font-size: 1.1rem;
-  background-color: #007bff;
-  border-radius: 8px;
-  margin-right: 12px;
-  color: black;
-}
-
-.hero-image-wrap {
-  text-align: center;
-}
-
-.hero-image {
-  width: 100%;
+/* LEFT SIDE — TEXT */
+.hero-text {
   max-width: 480px;
-  animation: float 3s ease-in-out infinite;
 }
 
-/* Floating animation */
-@keyframes float {
-  0% { transform: translateY(0); }
-  50% { transform: translateY(-10px); }
-  100% { transform: translateY(0); }
+.hero-title {
+  font-size: 3.4rem;
+  font-weight: 700;
+  line-height: 1.15;
+  margin-bottom: 20px;
+  color: #1a1a1a;
+}
+
+.hero-subtext {
+  font-size: 1.2rem;
+  color: #555;
+  line-height: 1.6;
+  margin-bottom: 32px;
+}
+
+/* Buttons row */
+.hero-buttons {
+  display: flex;
+  gap: 18px;
+}
+
+/* Button styles */
+.btn-shop {
+  background-color: #0d6efd;
+  padding: 14px 32px;
+  border-radius: 12px;
+  font-size: 1.1rem;
+  color: white;
+  border: none;
+  transition: background 0.25s;
+}
+
+.btn-shop:hover {
+  background-color: #0056d6;
+}
+
+.btn-learn {
+  padding: 14px 32px;
+  border-radius: 12px;
+  font-size: 1.1rem;
+  background: white;
+  border: 2px solid #1a1a1a;
+  color: #1a1a1a;
+  transition: 0.25s;
+}
+
+.btn-learn:hover {
+  background: #1a1a1a;
+  color: white;
+}
+
+/* RIGHT SIDE — COLLAGE */
+.hero-collage {
+  position: relative;
+  height: 520px;
+  flex-grow: 1;
+}
+
+/* Floating cards */
+.hero-card {
+  position: absolute;
+  background: white;
+  border-radius: 22px;
+  overflow: hidden;
+  box-shadow: 0 28px 60px rgba(0,0,0,0.15);
+  transition: transform 0.3s ease;
+}
+
+.hero-card:hover {
+  transform: translateY(-10px);
+}
+
+.hero-card img {
+  width: 100%;
+  display: block;
+}
+
+/* Positions */
+.hero-card.card-1 {
+  width: 360px;
+  top: 40px;
+  left: 20px;
+}
+
+.hero-card.card-2 {
+  width: 520px;
+  top: 0;
+  right: 20px;
+}
+
+.hero-card.card-3 {
+  width: 380px;
+  bottom: 0;
+  left: 300px;
+}
+
+/* Responsive */
+@media (max-width: 900px) {
+  .hero-layout {
+    flex-direction: column;
+  }
+
+  .hero-collage {
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+    width: 100%;
+  }
+
+  .hero-card {
+    position: relative;
+    width: 100% !important;
+    left: 0;
+    right: 0;
+  }
 }
